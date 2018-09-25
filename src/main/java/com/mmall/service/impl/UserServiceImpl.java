@@ -318,7 +318,7 @@ public class UserServiceImpl implements IUserService {
             userVo.setEmail(user.getEmail());
             userVo.setPhone(user.getPhone());
             userVo.setUsername(user.getUsername());
-            userVo.setCreateTime(DateTimeUtil.dateToStr(user.getCreateTime()));
+            userVo.setCreateTime(user.getCreateTime());
             userVoList.add(userVo);
         }
         return userVoList;

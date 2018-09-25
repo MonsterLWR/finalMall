@@ -201,7 +201,7 @@
         where email = #{email}
         and id != #{userId}
     </select>
-    <select id="selectUsers" resultType="com.mmall.pojo.User">
+    <select id="selectUsers" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from mmall_user
