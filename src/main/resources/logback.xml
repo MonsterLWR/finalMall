@@ -11,11 +11,11 @@
     </appender>
 
     <appender name="mmall" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>D:/Code/Java/mall/logs/mmall.log</File>
-        <!--<File>/root/developer/tomcat/apache-tomcat-7.0.90/logs/mall.log</File>-->
+        <!--<File>D:/Code/Java/mall/logs/mmall.log</File>-->
+        <File>/root/developer/tomcat/apache-tomcat-7.0.90/logs/mall.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>D:/Code/Java/mall/logs/mmall.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
-            <!--<fileNamePattern>/root/developer/tomcat/apache-tomcat-7.0.90/logs/mall.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+            <!--<fileNamePattern>D:/Code/Java/mall/logs/mmall.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+            <fileNamePattern>/root/developer/tomcat/apache-tomcat-7.0.90/logs/mall.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
@@ -26,11 +26,11 @@
 
 
     <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>D:/Code/Java/mall/logs/error.log</File>
-        <!--<File>/root/developer/tomcat/apache-tomcat-7.0.90/logs/error.log</File>-->
+        <!--<File>D:/Code/Java/mall/logs/error.log</File>-->
+        <File>/root/developer/tomcat/apache-tomcat-7.0.90/logs/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>D:/Code/Java/mall/logs/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
-            <!--<fileNamePattern>/root/developer/tomcat/apache-tomcat-7.0.90/logs/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+            <!--<fileNamePattern>D:/Code/Java/mall/logs/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+            <fileNamePattern>/root/developer/tomcat/apache-tomcat-7.0.90/logs/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
