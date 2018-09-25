@@ -16,7 +16,7 @@ public class UserVo {
 
     private String phone;
 
-    private String createTime;
+    private Date createTime;
 
     public Integer getId() {
         return id;
@@ -50,11 +50,11 @@ public class UserVo {
         this.phone = phone;
     }
 
-    public String getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 }
