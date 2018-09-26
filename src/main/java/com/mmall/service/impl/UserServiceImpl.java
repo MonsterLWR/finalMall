@@ -22,7 +22,7 @@ import java.util.UUID;
 /**
  * 功能描述: 用户相关Service实现
  *
- * @auther: Lee
+ * @auther: ZhangHao
  * @date: 2018/9/16 10:21
  */
 @Service("iUserService")
@@ -38,12 +38,12 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [username, password]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:22
          */
         int resultCount = userMapper.checkUsername(username);
         if (resultCount == 0) {
-            return ServerResponse.createByErrorMessage("用户民不存在！");
+            return ServerResponse.createByErrorMessage("用户名不存在！");
         }
 
         //编码password
@@ -57,7 +57,7 @@ public class UserServiceImpl implements IUserService {
 
         //密码置空，返回给前端
         user.setPassword(StringUtils.EMPTY);
-        return ServerResponse.createBySuccess("登陆成功", user);
+        return ServerResponse.createBySuccess("登录成功", user);
     }
 
     @Override
@@ -67,7 +67,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [user]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:35
          */
         //检验用户名重复
@@ -97,7 +97,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [str, type]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:37
          */
         if (StringUtils.isNoneBlank(type)) {
@@ -126,7 +126,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [username]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:53
          */
         //判断用户名是否合法
@@ -150,7 +150,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [username, question, anwser]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:04
          */
         int resultCount = userMapper.checkAnswer(username, question, anwser);
@@ -170,7 +170,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [username, passwordNew, forgetToken]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:07
          */
         if (StringUtils.isBlank(forgetToken)) {
@@ -206,7 +206,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [passwordOld, passwordNew, user]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:09
          */
         int resultCount = userMapper.checkPassword(MD5Util.MD5EncodeUtf8(passwordOld), user.getId());
@@ -229,7 +229,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [user]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:13
          */
         int resultCount = userMapper.checkEmailByUserId(user.getId(), user.getEmail());
@@ -257,7 +257,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [userId]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:15
          */
         User user = userMapper.selectByPrimaryKey(userId);
@@ -275,7 +275,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [user]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:16
          */
         if (user != null && user.getRole() == Const.Role.ROLE_ADMIN) {
@@ -291,7 +291,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: []
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/25 19:35
          */
         PageHelper.startPage(pageNum, pageSize);
@@ -308,7 +308,7 @@ public class UserServiceImpl implements IUserService {
          *
          * @param: [userList]
          * @return: java.util.List<com.mmall.vo.UserVo>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/25 19:57
          */
         List<UserVo> userVoList = Lists.newArrayList();

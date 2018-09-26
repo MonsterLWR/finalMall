@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 /**
  * 功能描述: 前台用户Controller类
  *
- * @auther: Lee
+ * @auther: ZhangHao
  * @date: 2018/9/16 10:18
  */
 @Controller
@@ -36,7 +36,7 @@ public class UserController {
          *
          * @param: [username, password, session]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:14
          */
         ServerResponse<User> response = iUserService.login(username, password);
@@ -55,7 +55,7 @@ public class UserController {
          *
          * @param: [session]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:35
          */
         session.removeAttribute(Const.CURRENT_USER);
@@ -70,7 +70,7 @@ public class UserController {
          *
          * @param: [user]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:35
          */
         return iUserService.regist(user);
@@ -84,7 +84,7 @@ public class UserController {
          *
          * @param: [str, type]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:50
          */
         return iUserService.checkValid(str, type);
@@ -98,7 +98,7 @@ public class UserController {
          *
          * @param: [session]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:50
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -116,7 +116,7 @@ public class UserController {
          *
          * @param: [username]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 10:51
          */
         return iUserService.selectQuestion(username);
@@ -130,7 +130,7 @@ public class UserController {
          *
          * @param: [username, question, answer]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:03
          */
         return iUserService.checkAnswer(username, question, answer);
@@ -144,7 +144,7 @@ public class UserController {
          *
          * @param: [username, passwordNew, forgetToken]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:08
          */
         return iUserService.forgetResetPassword(username, passwordNew, forgetToken);
@@ -158,7 +158,7 @@ public class UserController {
          *
          * @param: [passwordOld, passwordNew, session]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:09
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -176,7 +176,7 @@ public class UserController {
          *
          * @param: [session, user]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:13
          */
         User curUser = (User) session.getAttribute(Const.CURRENT_USER);
@@ -205,7 +205,7 @@ public class UserController {
          *
          * @param: [session]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:15
          */
         User currentUser = (User) session.getAttribute(Const.CURRENT_USER);

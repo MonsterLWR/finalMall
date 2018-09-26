@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 /**
  * 功能描述: 后台分类管理Controller
  *
- * @auther: Lee
+ * @auther: ZhangHao
  * @date: 2018/9/16 15:07
  */
 @Controller
@@ -37,7 +37,7 @@ public class CategoryManageController {
          *
          * @param: [session, categoryName, parentId]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 15:07
          */
         //管理员权限判断
@@ -62,7 +62,7 @@ public class CategoryManageController {
          *
          * @param: [session, categoryId, categoryName]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 15:10
          */
         //管理员权限
@@ -85,7 +85,7 @@ public class CategoryManageController {
          *
          * @param: [session, categoryId]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 15:14
          */
         User user = (User)session.getAttribute(Const.CURRENT_USER);
@@ -108,7 +108,7 @@ public class CategoryManageController {
          *
          * @param: [session, categoryId]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 15:16
          */
         User user = (User)session.getAttribute(Const.CURRENT_USER);

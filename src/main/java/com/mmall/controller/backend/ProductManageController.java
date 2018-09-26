@@ -27,7 +27,7 @@ import java.util.Map;
 /**
  * 功能描述: 后台商品Controller
  *
- * @auther: Lee
+ * @auther: ZhangHao
  * @date: 2018/9/16 16:47
  */
 @Controller
@@ -49,7 +49,7 @@ public class ProductManageController {
          *
          * @param: [session, product]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 16:54
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -72,7 +72,7 @@ public class ProductManageController {
          *
          * @param: [session, productId, status]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 16:56
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -94,7 +94,7 @@ public class ProductManageController {
          *
          * @param: [session, productId]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 17:01
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -117,7 +117,7 @@ public class ProductManageController {
          *
          * @param: [session, pageNum, pageSize]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 17:03
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -139,7 +139,7 @@ public class ProductManageController {
          *
          * @param: [session, productName, productId, pageNum, pageSize]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 17:06
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -161,7 +161,7 @@ public class ProductManageController {
          *
          * @param: [session, file, request]
          * @return: com.mmall.common.ServerResponse
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 17:12
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -192,7 +192,7 @@ public class ProductManageController {
          *
          * @param: [session, file, request, response]
          * @return: java.util.Map
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 17:23
          */
         Map resultMap = Maps.newHashMap();

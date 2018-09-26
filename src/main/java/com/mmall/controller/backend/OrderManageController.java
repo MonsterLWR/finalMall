@@ -35,7 +35,7 @@ public class OrderManageController {
          *
          * @param: [session, pageNum, pageSize]
          * @return: com.mmall.common.ServerResponse<com.github.pagehelper.PageInfo>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/17 15:11
          */
 
@@ -58,7 +58,7 @@ public class OrderManageController {
          *
          * @param: [session, orderNo]
          * @return: com.mmall.common.ServerResponse<com.mmall.vo.OrderVo>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/17 15:35
          */
 
@@ -86,7 +86,7 @@ public class OrderManageController {
          *
          * @param: [session, orderNo, pageNum, pageSize]
          * @return: com.mmall.common.ServerResponse<com.github.pagehelper.PageInfo>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/25 20:33
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
@@ -110,7 +110,7 @@ public class OrderManageController {
          *
          * @param: [session, orderNo]
          * @return: com.mmall.common.ServerResponse<java.lang.String>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/17 15:35
          */
 

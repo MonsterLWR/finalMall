@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 /**
  * 功能描述: 后台用户Controller
  *
- * @auther: Lee
+ * @auther: ZhangHao
  * @date: 2018/9/16 11:16
  */
 @Controller
@@ -36,7 +36,7 @@ public class UserManageController {
          *
          * @param: [username, password, session]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/16 11:17
          */
         ServerResponse<User> response = iUserService.login(username, password);
@@ -61,7 +61,7 @@ public class UserManageController {
          *
          * @param: [pageNum, session]
          * @return: com.mmall.common.ServerResponse<com.mmall.pojo.User>
-         * @auther: Lee
+         * @auther: ZhangHao
          * @date: 2018/9/25 19:34
          */
         User user = (User) session.getAttribute(Const.CURRENT_USER);
