@@ -6,7 +6,7 @@ import com.mmall.pojo.User;
 /**
  * 功能描述: 用户相关Service接口
  *
- * @auther: Lee
+ * @auther: ZhangHao
  * @date: 2018/9/16 10:20
  */
 public interface IUserService {
